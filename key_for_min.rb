@@ -14,6 +14,7 @@ def key_for_min_value(name_hash)
   lowest_value = values.last
   key_for_min = 0
   values.each_with_index do |value, index|
+    binding.pry
     if value < lowest_value
       lowest_value = value
       key_for_min = index
