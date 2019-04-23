@@ -22,8 +22,8 @@ def key_for_min_value(name_hash)
       when -1
         min_value = value
     end
-    binding.pry
   end
+  binding.pry
 end
 
 
