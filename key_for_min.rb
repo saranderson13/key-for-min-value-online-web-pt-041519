@@ -4,21 +4,11 @@
 require 'pry'
 
 def key_for_min_value(name_hash)
-  keys = []
-  values = []
+  key_collection = []
+  value_collection = []
   name_hash.each do |key, value| 
-    keys << key
-    values << value
+    key_collection << key
+    value_collection << value
   end
-
-  lowest_value = values.last
-  key_for_min = values.length
-  values.each_with_index do |value, index|
-    # binding.pry
-    if value < lowest_value
-      lowest_value = value
-      key_for_min = index
-    end
-  end
-  keys[key_for_min]
+  binding.pry
 end
