@@ -24,6 +24,7 @@ def key_for_min_value(name_hash)
     end
   end
   binding.pry
+  key_collection[value_collection.index(min_value)]
 end
 
 
