@@ -10,8 +10,7 @@ def key_for_min_value(name_hash)
     keys << key
     values << value
   end
-  binding.pry 
-  
+
   lowest_value = values.last
   key_for_min = 0
   values.each_with_index do |value, index|
