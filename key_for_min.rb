@@ -10,5 +10,19 @@ def key_for_min_value(name_hash)
     key_collection << key
     value_collection << value
   end
-  binding.pry
+  
+  min_value
+  compare_me = value_collection[0]
+  value_collection.each do |value|
+    case value <=> compare_me 
+      when 1
+        min_value = 
+      when 0
+        
+      when -1
+    
+    end
+  end
 end
+
+
