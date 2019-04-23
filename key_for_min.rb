@@ -8,7 +8,7 @@ def key_for_min_value(name_hash)
   values = []
   name_hash.each do |key, value| 
     keys << key
-    values << values
+    values << value
   end
   binding.pry 
   
