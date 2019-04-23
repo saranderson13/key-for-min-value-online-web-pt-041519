@@ -11,7 +11,7 @@ def key_for_min_value(name_hash)
     value_collection << value
   end
   
-  min_value
+  min_value = value_collection[0]
   compare_me = value_collection[0]
   value_collection.each do |value|
     case value <=> compare_me 
