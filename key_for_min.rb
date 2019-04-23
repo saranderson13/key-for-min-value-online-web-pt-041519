@@ -23,7 +23,6 @@ def key_for_min_value(name_hash)
         min_value = value
     end
   end
-  # binding.pry
   min_value == nil ? nil : key_collection[value_collection.index(min_value)]
 end
 
