@@ -16,12 +16,13 @@ def key_for_min_value(name_hash)
   value_collection.each do |value|
     case value <=> compare_me 
       when 1
-        min_value = 
+        min_value = compare_me
       when 0
-        
+        min_value = value
       when -1
-    
+        min_value = value
     end
+    binding.pry
   end
 end
 
