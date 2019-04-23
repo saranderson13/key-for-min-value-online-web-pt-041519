@@ -4,9 +4,20 @@
 require 'pry'
 
 def key_for_min_value(name_hash)
-  peeps = []
+  keys = []
   values = []
   name_hash.each do |key, value| 
-    
+    keys << key
+    values << values
   end
+  
+  lowest_value = values.last
+  key_for_min = 0
+  values.each_with_index do |value, index|
+    if value < lowest_value
+      lowest_value = value
+      key_for_min = index
+    end
+  end
+  keys[key_for_min]
 end
